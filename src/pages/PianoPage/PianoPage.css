@@ -1,0 +1,34 @@
+.piano-page-container {
+  margin-left: 21vw;
+}
+.piano-page-header {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 500;
+  border-bottom: 3px solid black;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.piano-page-description > a {
+  text-decoration: underline;
+  color: black;
+}
+.piano-page-description {
+  font-style: italic;
+}
+/* for blue mode */
+
+[data-theme="blue"] .piano-page-description > a {
+  color: white;
+}
+[data-theme="blue"] .piano-page-header {
+  border-bottom-color: white;
+}
+
+/* dark mode  */
+[data-theme="dark"] .piano-page-description > a {
+  color: white;
+}
+[data-theme="dark"] .piano-page-header {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,40 @@
+.augmented-reality-page-container {
+  margin-left: 21vw;
+  margin-top: 1vw;
+}
+.augmented-reality-page-header {
+  margin: 1vh -1vw 1vh 0vw;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 400;
+  border-bottom: 3px solid black;
+}
+.augmented-reality-page-description {
+  font-style: italic;
+  margin: 3vh 0;
+  display: flex;
+  justify-content: start;
+}
+.youtube-and-notes-container {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 78vw;
+  background: red;
+}
+.recent-posts-from-youtube {
+  border: right 1px solid black;
+  background-color: red;
+  width: auto;
+}
+.notes-container {
+  width: 50%;
+  font-size: 1.2rem;
+}
+[data-theme="blue"] .augmented-reality-page-header {
+  border-bottom: 3px solid white;
+}
+[data-theme="dark"] .augmented-reality-page-header {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}

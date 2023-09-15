@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  color: black;
+  background-color: black;
+}
+[data-theme="blue"] {
+  background: rgb(168, 197, 255);
+  color: white;
+}
+[data-theme="blue"] .loading-container {
+  background-color: rgba(100, 105, 255, 0.85);
+}
+[data-theme="dark"] {
+  background: var(--dark-mode-grey) !important;
+  color: white;
+}
+[data-theme="dark"] .loading-container {
+  background-color: rgba(29, 29, 29, 0.85);
+}

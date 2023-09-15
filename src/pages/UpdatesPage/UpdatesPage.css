@@ -1,0 +1,104 @@
+.updates-page-container {
+  margin-left: 21vw;
+  margin-top: 2vh;
+}
+.admin-welcome-message {
+  font-size: 3rem;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-weight: 600;
+}
+.updates-page-header {
+  margin: 1vh -1vw 1vh 0vw;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 400;
+  border-bottom: 3px solid black;
+}
+.updates-page-description {
+  font-style: italic;
+  margin: 3vh 0;
+}
+.feedback-message {
+  margin-bottom: 1.25rem;
+  color: rgb(163, 210, 163);
+  font-weight: bold;
+}
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-bottom: 1.875rem;
+  max-width: 20vw;
+}
+.post-input,
+.hashtag-select,
+.send-button {
+  padding: 0.625rem;
+  font-size: 1rem;
+}
+.send-button {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  border-radius: 0.3125rem;
+  transition: background-color 0.3s ease;
+}
+.send-button:hover {
+  background-color: #000000;
+  color: white;
+}
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.post-item {
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+.post-bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.post-username,
+.post-content,
+.post-hashtag,
+.post-date {
+  margin: 0.625rem 0 0 0;
+}
+.post-date {
+  display: flex;
+  justify-content: end;
+}
+.post-hashtag {
+  font-weight: 450;
+}
+[className^="hashtag-option"] {
+  opacity: 0.3;
+}
+[data-theme="blue"] .updates-page-header {
+  border-bottom: 3px solid white;
+}
+[data-theme="blue"] .send-button {
+  border: 1px solid white;
+}
+[data-theme="blue"] .post-item {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+[data-theme="dark"] .updates-page-header {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+[data-theme="dark"] .send-button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+[data-theme="dark"] .post-item {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}

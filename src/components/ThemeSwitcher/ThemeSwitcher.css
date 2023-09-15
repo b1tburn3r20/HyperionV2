@@ -1,0 +1,23 @@
+.theme-switcher-container {
+  text-align: center;
+  background: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 1vh 3vw;
+}
+
+.theme-switcher-container-container:hover * {
+  color: white;
+  border: 1px solid white;
+}
+
+/* dark mode */
+[data-theme="dark"] .theme-switcher-container {
+  color: white;
+  border: 1px solid white;
+}
+/* blue mode */
+[data-theme="blue"] .theme-switcher-container {
+  color: white;
+  border: 1px solid white;
+}

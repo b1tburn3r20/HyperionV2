@@ -1,0 +1,52 @@
+.YouTubeMusic-component-container {
+    overflow: hidden; // Ensure that nothing overflows outside of the main container
+  }
+  
+  .new-songs-container {
+    display: flex;
+    overflow-x: auto; // Enables horizontal scrolling
+    white-space: nowrap; // Prevents wrapping onto the next line
+  
+    // Styles for the scrollbar track (background)
+    &::-webkit-scrollbar {
+      height: 8vh; // Adjust as necessary for the entire track
+      background-color: black; // Set track color
+    }
+  
+    // Styles for the scrollbar handle (thumb)
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(252, 255, 175); // Set thumb color
+      border: 1vh solid transparent;  // This acts like a padding
+      background-clip: content-box;   // This ensures background doesn't extend into the border
+    }
+  
+    // For browsers supporting both webkit and standard properties
+    scrollbar-color: red black; // thumb track
+    scrollbar-width: thin; // Adjust width
+  }
+  
+  .new-songs-container iframe {
+    flex: 0 0 50%; // Takes up 100% of the viewport width, but doesn't grow or shrink
+  }
+  //  mode blue
+  [data-theme="blue"] .new-songs-container::-webkit-scrollbar {
+    height: 8vh; /* Adjust as necessary for the entire track */
+    background-color: rgb(25, 31, 56); /* Set track color */
+  }
+  
+  [data-theme="blue"] .new-songs-container::-webkit-scrollbar-thumb {
+    background-color: rgb(160, 226, 255); /* Set thumb color to blue */
+    border: 1vh solid transparent; /* This acts like a padding */
+    background-clip: content-box; /* This ensures background doesn't extend into the border */
+  }
+  // dark mode
+  [data-theme="dark"] .new-songs-container::-webkit-scrollbar {
+    height: 8vh; /* Adjust as necessary for the entire track */
+    background-color: #212325 /* Set track color */
+  }
+  
+  [data-theme="dark"] .new-songs-container::-webkit-scrollbar-thumb {
+    background-color: rgb(228, 228, 228); /* Set thumb color to blue */
+    border: 1vh solid transparent; /* This acts like a padding */
+    background-clip: content-box; /* This ensures background doesn't extend into the border */
+  }

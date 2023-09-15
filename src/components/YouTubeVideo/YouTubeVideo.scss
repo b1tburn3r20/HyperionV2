@@ -1,0 +1,65 @@
+.YouTubeVideo-component-container {
+  overflow: hidden; /* Ensure that nothing overflows outside of the main container */
+}
+
+.new-videos-container {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping onto the next line */
+
+  &::-webkit-scrollbar {
+    height: 8vh; // Adjust as necessary for the entire track
+    background-color: black; // Set track color
+  }
+
+  // Styles for the scrollbar handle (thumb)
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 99, 99); // Set thumb color
+    border: 1vh solid transparent;  // This acts like a padding
+    background-clip: content-box;   // This ensures background doesn't extend into the border
+  }
+
+  // For browsers supporting both webkit and standard properties
+  scrollbar-color: red black; // thumb track
+  scrollbar-width: thin; // Adjust width
+}
+  
+  
+  
+
+.new-videos-container iframe {
+  flex: 0 0 50%; /* Takes up 100% of the viewport width, but doesn't grow or shrink */
+}
+
+// mode blue
+
+[data-theme="blue"] .new-videos-container::-webkit-scrollbar {
+  height: 8vh; /* Adjust as necessary for the entire track */
+  background-color: rgb(18, 43, 29); /* Set track color */
+}
+
+[data-theme="blue"] .new-videos-container::-webkit-scrollbar-thumb {
+  background-color: rgb(183, 255, 186); /* Set thumb color to blue */
+  border: 1vh solid transparent; /* This acts like a padding */
+  background-clip: content-box; /* This ensures background doesn't extend into the border */
+}
+[data-theme="blue"] .youtube-and-notes-container {
+  border-top: 1px solid white;
+}
+
+[data-theme="blue"] .recent-posts-from-youtube {
+  border-right: 1px solid white;
+}
+
+// mode dark
+
+[data-theme="dark"] .new-videos-container::-webkit-scrollbar {
+  height: 8vh; /* Adjust as necessary for the entire track */
+  background-color: rgb(25, 28, 26); /* Set track color */
+}
+
+[data-theme="dark"] .new-videos-container::-webkit-scrollbar-thumb {
+  background-color: rgb(220, 247, 255); /* Set thumb color to blue */
+  border: 1vh solid transparent; /* This acts like a padding */
+  background-clip: content-box; /* This ensures background doesn't extend into the border */
+}

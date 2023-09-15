@@ -1,0 +1,67 @@
+.auth-page-container {
+  margin-left: 21vw;
+  margin-right: 1vw;
+}
+.top-container {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.welcome-note {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 5rem !important;
+}
+.welcome-description {
+  align-items: center;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  font-style: italic;
+  padding: 0.5rem 0 0 0;
+  margin-top: -1rem;
+  margin-left: 0.5vw;
+  margin-bottom: 3rem;
+  display: inline-block;
+  max-width: 60vw;
+  border-bottom: 3px solid black;
+}
+.middle-container {
+  font-family: "Montserrat", sans-serif;
+}
+.introduction-header {
+  display: inline-block;
+  justify-content: flex-end;
+  margin-left: 46vw;
+  margin-bottom: 1rem;
+  border-top: 1px solid black;
+  font-size: 2.5rem;
+  font-weight: 450;
+  font-style: italic;
+}
+.auth-page-middle-container-list-container {
+  list-style: inside;
+}
+.auth-page-middle-container-list-item {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.signup-login-toggle {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.signup-login-toggle:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
