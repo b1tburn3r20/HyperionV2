@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const updatesCtrl = require('../../controllers/api/updates');
+const updatesCtrl = require('../../controllers/api/updates.js');
 
 // Use the correct function name 'createUpdate' from your updates controller
 router.post('/', updatesCtrl.createUpdate);

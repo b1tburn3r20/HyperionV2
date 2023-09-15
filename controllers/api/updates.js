@@ -1,4 +1,4 @@
-const UpdatePost = require('../../models/updatepost');
+const UpdatePost = require('../../models/updatepost.js');
 
 module.exports = {
   createUpdate,
