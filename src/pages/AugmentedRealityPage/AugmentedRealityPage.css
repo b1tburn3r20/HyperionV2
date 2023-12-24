@@ -15,6 +15,17 @@
   display: flex;
   justify-content: start;
 }
+#banner {
+  font-style: italic;
+  margin: -1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: start;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+}
 .youtube-and-notes-container {
   border-top: 1px solid black;
   display: flex;

@@ -102,3 +102,23 @@
 [data-theme="dark"] .post-item {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 1300px) {
+  .updates-page-container {
+    margin-left: 8vw;
+    margin-top: 2vh;
+  }
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .post-item {
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+}

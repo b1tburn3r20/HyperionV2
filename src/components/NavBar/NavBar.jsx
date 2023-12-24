@@ -39,7 +39,7 @@ export default function NavBar({ user, setUser }) {
               <ThemeSwitcher />
             </>
           ) : (
-            <> </>
+            <>Login for themes</>
           )}
         </div>
         <div className="navbar-link">
@@ -58,7 +58,9 @@ export default function NavBar({ user, setUser }) {
         </div>
       </nav>
       <div className="toggle-themeBtn">
-        <button className="navbar-toggle" onClick={handleToggle}></button>
+        <button className="navbar-toggle" onClick={handleToggle}>
+          0
+        </button>
       </div>
     </div>
   );

@@ -42,9 +42,9 @@
   display: flex;
   justify-content: end;
   background-color: transparent;
-  color: white;
+  color: black;
   padding: 1vh 1vw;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 5px;
 }
 .navbar::-webkit-scrollbar {
@@ -190,6 +190,18 @@
 [data-theme="blue"] .navbar::-webkit-scrollbar-thumb {
   background-color: #bfd6ff;
 }
+[data-theme="blue"] .navbar-toggle {
+  color: white;
+  border: 1px solid white;
+}
+[data-theme="dark"] .navbar-toggle {
+  color: white;
+  border: 1px solid white;
+}
+[data-theme="blue"] .navbar-toggle {
+  color: white;
+  border: 1px solid white;
+}
 [data-theme="dark"] .navbar-link {
   color: white;
   border-bottom: 1px solid white;
@@ -230,13 +242,14 @@
   .navbar.show {
     transform: translateX(+50%);
     max-width: 50vw;
-    width: 50vw;
+    width: 80vw;
+    border-left: 1px solid;
   }
 
   .navbar-toggle {
     position: fixed;
     top: 50%;
-    left: 10%;
+    left: 5%;
     transform: translateX(-50%);
     z-index: 200;
   }

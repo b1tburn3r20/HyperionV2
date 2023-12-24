@@ -34,3 +34,8 @@
   background: black;
   color: white;
 }
+@media (max-width: 1300px) {
+  .form-container form {
+    min-width: 70vw;
+  }
+}

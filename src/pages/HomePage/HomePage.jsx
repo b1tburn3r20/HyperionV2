@@ -76,16 +76,16 @@ export default function HomePage() {
         <div className="end-of-page-goods">
           <div className="who-am-i-container">
             <div className="who-am-i-description">
-              I'm just a guy who likes obscure music, watches YouTube and works
-              at a Walgreens. I love to code, I built this website as a side
-              project to post more updates on me so others could see whats goin'
-              on with me. I am learning piano, check out my progress in the
-              Piano tab in the Navbar. I am learning some tinkering too right
-              now building A.R object detection passthrough headgear, check that
-              out by clicking the Augmented Reality tab in the Navbar. Like the
-              music, videos, songs posts or anything you want to comment on,
-              maybe just to say "hi". Sign up and simply drop a comment. Enjoy
-              your stay.
+              I'm just a guy who likes obscure music, loves a challenge and
+              tries to make new stuff. I love to code, I built this website as a
+              side project to post more updates on me so others could see whats
+              goin' on with me. I am learning piano, check out my progress in
+              the Piano tab in the Navbar. I am learning some tinkering too
+              right now building A.R object detection passthrough headgear,
+              check that out by clicking the Augmented Reality tab in the
+              Navbar. Like the music, videos, songs posts or anything you want
+              to comment on, maybe just to say "hi". Sign up and simply drop a
+              comment. Enjoy your stay.
             </div>
             <div className="image-me-container">
               <img

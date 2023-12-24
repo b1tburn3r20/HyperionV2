@@ -25,3 +25,9 @@ body {
 [data-theme="dark"] .loading-container {
   background-color: rgba(29, 29, 29, 0.85);
 }
+body,
+[data-theme="blue"],
+[data-theme="dark"],
+.loading-container {
+  transition: background 0.3s ease, color 0.3s ease;
+}

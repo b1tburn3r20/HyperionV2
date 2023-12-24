@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import Loading from "react-loading";
 import { CSSTransition } from "react-transition-group";
+import YouTubeVideo from "../../components/YTVidsAug/YouTubeVideo";
 
 import "./AugmentedRealityPage.css";
 import { ThemeContext } from "../App/App";
@@ -47,7 +48,12 @@ export default function AugmentedRealityPage() {
           <Loading type={"balls"} color={loadingColor} />
         </div>
       </CSSTransition>
+      <div id="banner">
+        UPDATE: I completed my AR Headgear, I just forgot to record the
+        progress, does it work? yes. Is it comfortable? no.
+      </div>
       <div className="augmented-reality-page-header">Augmented Reality</div>
+
       <div className="augmented-reality-page-description">
         Welcome to my page on my progress with augmented reality, here you will
         see all my progress related to working with augmented reality, so far im
@@ -56,26 +62,7 @@ export default function AugmentedRealityPage() {
         object detection.
       </div>
       <div className="youtube-and-notes-container">
-        <div className="notes-container">yoyoyo</div>
-        <div className="recent-posts-from-youtube">
-          <div className="new-videos-container">
-            {" "}
-            {videos.map((video) => (
-              <div className="iframe-wrapper">
-                <iframe
-                  key={video.snippet.resourceId.videoId}
-                  width="450"
-                  height="300"
-                  src={`https://www.youtube.com/embed/${video.snippet.resourceId.videoId}`}
-                  title={video.snippet.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            ))}
-          </div>
-        </div>
+        <YouTubeVideo />
       </div>
     </div>
   );

@@ -21,6 +21,9 @@ export async function login(credentials) {
 
 export function logOut() {
   localStorage.removeItem('token');
+  localStorage.removeItem('theme')
+  localStorage.removeItem('isDarkMode')
+  window.location.reload()
 }
 
 export function getToken() {
